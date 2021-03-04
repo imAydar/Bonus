@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Aydar\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Aydar\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_Bonus.-396118116.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Aydar\RiderProjects\Bonus" t="IncludeFlat">
+      <e p="Bonus.Data" t="IncludeRecursive">
+        <e p="ApplicationDbContext.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Bonus.Data.csproj" t="IncludeRecursive" />
+        <e p="Models" t="Include">
+          <e p="Card.cs" t="Include" />
+          <e p="Customer.cs" t="Include" />
+          <e p="Store.cs" t="Include" />
+          <e p="Terminal.cs" t="Include" />
+          <e p="Transaction.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp5.0" t="Include">
+              <e p="Bonus.Data.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Repositories" t="Include">
+          <e p="CardRepository.cs" t="Include" />
+          <e p="CustomerRepository.cs" t="Include" />
+          <e p="Interfaces" t="Include">
+            <e p="ICardRepository.cs" t="Include" />
+            <e p="ICustomerRepository.cs" t="Include" />
+            <e p="IRepositoryBase.cs" t="Include" />
+          </e>
+          <e p="RepositoryBase.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Bonus.sln" t="IncludeFlat" />
+      <e p="Bonus.Web" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Bonus.Web.csproj" t="IncludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="CardController.cs" t="Include" />
+          <e p="ControllerBase.cs" t="Include" />
+          <e p="CustomerController.cs" t="Include" />
+          <e p="Interfaces" t="Include">
+            <e p="ICardController.cs" t="Include" />
+            <e p="IControllerBase.cs" t="Include" />
+            <e p="ICustomerController.cs" t="Include" />
+            <e p="ITransationController.cs" t="Include" />
+          </e>
+          <e p="TransactionController.cs" t="Include" />
+          <e p="WeatherForecastController.cs" t="Include" />
+        </e>
+        <e p="DI" t="Include">
+          <e p="DIModule.cs" t="Include" />
+        </e>
+        <e p="Migrations" t="Include">
+          <e p="20210303163246_first.cs" t="Include" />
+          <e p="20210303163246_first.Designer.cs" t="Include" />
+          <e p="ApplicationDbContextModelSnapshot.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="net5.0" t="Include">
+              <e p="Bonus.Web.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Services" t="Include">
+          <e p="BaseService.cs" t="Include" />
+          <e p="CardService.cs" t="Include" />
+          <e p="CustomerService.cs" t="Include" />
+          <e p="Interfaces" t="Include">
+            <e p="IBaseService.cs" t="Include" />
+            <e p="ICardService.cs" t="Include" />
+            <e p="ICustomerService.cs" t="Include" />
+            <e p="ITransactionService.cs" t="Include" />
+          </e>
+          <e p="TransactionService.cs" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+        <e p="WeatherForecast.cs" t="Include" />
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
