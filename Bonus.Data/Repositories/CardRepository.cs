@@ -23,9 +23,7 @@ namespace Bonus.Data.Repositories
             }
         }
         
-        public async Task<Card> GetByCode(string code)
-        {
-            return await context.Cards.FirstAsync(x => x.Code == code);
-        }
+        public async Task<Card> GetByCode(string code) =>
+            await context.Cards.FirstAsync(x => x.Code == code);
     }
 }

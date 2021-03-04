@@ -4,10 +4,12 @@ using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 using Autofac;
+using Bonus.Core.Services;
+using Bonus.Core.Services.Interfaces;
 using Bonus.Data;
+using Bonus.Data.Models;
 using Bonus.Data.Repositories;
 using Bonus.Web.Controllers;
-using Bonus.Web.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -18,12 +20,15 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Microsoft.EntityFrameworkCore;
+using Card = Bonus.Core.Services.Card;
+using Customer = Bonus.Core.Services.Customer;
+using Store = Bonus.Core.Services.Store;
 
 namespace Bonus.Web
 {
     public class Startup
     {
-        private readonly IConfiguration configuration;
+        //private readonly IConfiguration configuration;
 
         public Startup(IConfiguration configuration)
         {
@@ -40,12 +45,13 @@ namespace Bonus.Web
             services.AddEntityFrameworkNpgsql().AddDbContext<Bonus.Data.ApplicationDbContext>(opt =>
                 opt.UseNpgsql(Configuration.GetConnectionString("MyWebApiConection"),
                     b => b.MigrationsAssembly("Bonus.Web")));
-
-
+            
             services.AddScoped<ICardRepository, CardRepository>();
-            services.AddScoped<ICardService, CardService>();
+            services.AddScoped<ICard, Card>();
             services.AddScoped<ICustomerRepository, CustomerRepository>();
-            services.AddScoped<ICustomerService, CustomerService>();
+            services.AddScoped<ICustomer, Customer>();
+            services.AddScoped<IStoreRepository, StoreRepository>();
+            services.AddScoped<IStore, Store>();
         }
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {

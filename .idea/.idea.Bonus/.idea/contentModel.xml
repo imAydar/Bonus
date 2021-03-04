@@ -4,6 +4,31 @@
     <e p="C:\Users\Aydar\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Aydar\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_Bonus.-396118116.00" t="ExcludeRecursive" />
     <e p="C:\Users\Aydar\RiderProjects\Bonus" t="IncludeFlat">
+      <e p="Bonus.Core" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Bonus.Core.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="net5.0" t="Include">
+              <e p="Bonus.Core.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Services" t="Include">
+          <e p="Card.cs" t="Include" />
+          <e p="Customer.cs" t="Include" />
+          <e p="Interfaces" t="Include">
+            <e p="ICard.cs" t="Include" />
+            <e p="ICustomer.cs" t="Include" />
+            <e p="IServiceBase.cs" t="Include" />
+            <e p="IStore.cs" t="Include" />
+            <e p="ITransactionService.cs" t="Include" />
+          </e>
+          <e p="ServiceBase.cs" t="Include" />
+          <e p="Store.cs" t="Include" />
+          <e p="TransactionService.cs" t="Include" />
+        </e>
+      </e>
       <e p="Bonus.Data" t="IncludeRecursive">
         <e p="ApplicationDbContext.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
@@ -29,8 +54,10 @@
             <e p="ICardRepository.cs" t="Include" />
             <e p="ICustomerRepository.cs" t="Include" />
             <e p="IRepositoryBase.cs" t="Include" />
+            <e p="IStoreRepository.cs" t="Include" />
           </e>
           <e p="RepositoryBase.cs" t="Include" />
+          <e p="StoreRepository.cs" t="Include" />
         </e>
       </e>
       <e p="Bonus.sln" t="IncludeFlat" />
@@ -47,8 +74,10 @@
             <e p="ICardController.cs" t="Include" />
             <e p="IControllerBase.cs" t="Include" />
             <e p="ICustomerController.cs" t="Include" />
+            <e p="IStoreController.cs" t="Include" />
             <e p="ITransationController.cs" t="Include" />
           </e>
+          <e p="StoreController.cs" t="Include" />
           <e p="TransactionController.cs" t="Include" />
           <e p="WeatherForecastController.cs" t="Include" />
         </e>
@@ -70,18 +99,6 @@
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
-        </e>
-        <e p="Services" t="Include">
-          <e p="BaseService.cs" t="Include" />
-          <e p="CardService.cs" t="Include" />
-          <e p="CustomerService.cs" t="Include" />
-          <e p="Interfaces" t="Include">
-            <e p="IBaseService.cs" t="Include" />
-            <e p="ICardService.cs" t="Include" />
-            <e p="ICustomerService.cs" t="Include" />
-            <e p="ITransactionService.cs" t="Include" />
-          </e>
-          <e p="TransactionService.cs" t="Include" />
         </e>
         <e p="Startup.cs" t="Include" />
         <e p="WeatherForecast.cs" t="Include" />

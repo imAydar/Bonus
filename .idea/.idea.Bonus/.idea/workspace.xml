@@ -10,60 +10,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="339e811e-f809-4262-98e6-7daec645bedb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Bonus/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Bonus/.idea/contentModel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Bonus/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Bonus/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Bonus/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Bonus/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Bonus/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Bonus/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bonus.Data/ApplicationDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bonus.Data/Bonus.Data.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bonus.Data/Models/Card.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bonus.Data/Models/Customer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bonus.Data/Models/Store.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bonus.Data/Models/Terminal.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bonus.Data/Models/Transaction.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bonus.Data/Repositories/CardRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bonus.Data/Repositories/CustomerRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bonus.Data/Repositories/Interfaces/ICardRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bonus.Data/Repositories/Interfaces/ICustomerRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bonus.Data/Repositories/Interfaces/IRepositoryBase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bonus.Data/Repositories/RepositoryBase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bonus.Web/Bonus.Web.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bonus.Web/Controllers/CardController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bonus.Web/Controllers/ControllerBase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bonus.Web/Controllers/CustomerController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bonus.Web/Controllers/Interfaces/ICardController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bonus.Web/Controllers/Interfaces/IControllerBase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bonus.Web/Controllers/Interfaces/ICustomerController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bonus.Web/Controllers/Interfaces/ITransationController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bonus.Web/Controllers/TransactionController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bonus.Web/Controllers/WeatherForecastController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bonus.Web/DI/DIModule.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bonus.Web/Migrations/20210303163246_first.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bonus.Web/Migrations/20210303163246_first.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bonus.Web/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bonus.Web/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bonus.Web/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bonus.Web/Services/BaseService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bonus.Web/Services/CardService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bonus.Web/Services/CustomerService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bonus.Web/Services/Interfaces/IBaseService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bonus.Web/Services/Interfaces/ICardService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bonus.Web/Services/Interfaces/ICustomerService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bonus.Web/Services/Interfaces/ITransactionService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bonus.Web/Services/TransactionService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bonus.Web/Startup.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bonus.Web/WeatherForecast.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bonus.Web/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bonus.Web/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bonus.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Card.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DockerFile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bonus.Core/Bonus.Core.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bonus.Core/Services/Interfaces/IStoreService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bonus.Core/Services/StoreService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bonus.Data/Repositories/Interfaces/IStoreRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bonus.Data/Repositories/StoreRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bonus.Web/Controllers/Interfaces/IStoreController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bonus.Web/Controllers/StoreController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Bonus/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bonus/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Bonus/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bonus/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bonus.Data/Repositories/CardRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Bonus.Data/Repositories/CardRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bonus.Data/Repositories/CustomerRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Bonus.Data/Repositories/CustomerRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bonus.Data/Repositories/Interfaces/ICustomerRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Bonus.Data/Repositories/Interfaces/ICustomerRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bonus.Data/Repositories/RepositoryBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Bonus.Data/Repositories/RepositoryBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bonus.Web/Bonus.Web.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Bonus.Web/Bonus.Web.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bonus.Web/Controllers/CardController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Bonus.Web/Controllers/CardController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bonus.Web/Controllers/ControllerBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Bonus.Web/Controllers/ControllerBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bonus.Web/Controllers/CustomerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Bonus.Web/Controllers/CustomerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bonus.Web/Controllers/TransactionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Bonus.Web/Controllers/TransactionController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bonus.Web/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Bonus.Web/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bonus.Web/Services/BaseService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Bonus.Core/Services/BaseService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bonus.Web/Services/CardService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Bonus.Core/Services/CardService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bonus.Web/Services/CustomerService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Bonus.Core/Services/CustomerService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bonus.Web/Services/Interfaces/IBaseService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Bonus.Core/Services/Interfaces/IBaseService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bonus.Web/Services/Interfaces/ICardService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Bonus.Core/Services/Interfaces/ICardService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bonus.Web/Services/Interfaces/ICustomerService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Bonus.Core/Services/Interfaces/ICustomerService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bonus.Web/Services/Interfaces/ITransactionService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Bonus.Core/Services/Interfaces/ITransactionService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bonus.Web/Services/TransactionService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Bonus.Core/Services/TransactionService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bonus.Web/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Bonus.Web/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bonus.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Bonus.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Card.cs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,37 +51,21 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/20F0FCC7-0C8F-4B83-9A46-22A8D55D531B/C/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Aydar/RiderProjects/Bonus/Bonus.Web/Startup.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Aydar/RiderProjects/Bonus/Bonus.Web/Startup.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Aydar/RiderProjects/Bonus/Bonus.Web/Startup.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2DB4A2AF-EA8F-4C8D-B2DC-DBD26266917F/11/GenericWebHostBuilder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/B8954790-C652-4EBA-B1A2-4F18D2469303/10F/ActionMethodExecutor.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Aydar/RiderProjects/Bonus/Bonus.Web/Startup.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Bonus.Web/Services/CardService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Bonus.Core/Services/CardService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F758DD2F-9E4C-41A0-B7A1-63138D66F75D/A/ServiceProvider.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Bonus.Web/Services/Interfaces/ICardService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Bonus.Core/Services/Interfaces/ICardService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/C7788B2B-C733-412D-8EE3-9C302FF7CE57/3/HostBuilder.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Aydar/RiderProjects/Bonus/Bonus.Web/Startup.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Bonus.Core/Services/BaseService.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Bonus.Web/Controllers/Card.cs" />
-        <option value="$PROJECT_DIR$/Bonus.Web/Data/Card.cs" />
-        <option value="$PROJECT_DIR$/Bonus.Web/Data/Models/Card.cs" />
-        <option value="$PROJECT_DIR$/Bonus.Web/Data/ApplicationDbContext.cs" />
-        <option value="$PROJECT_DIR$/Bonus.Web/Data/Repositories/ICardRepository.cs" />
-        <option value="$PROJECT_DIR$/Bonus.Web/Data/Repositories/CardRepository.cs" />
-        <option value="$PROJECT_DIR$/Bonus.Data/Class1.cs" />
-        <option value="$PROJECT_DIR$/Bonus.Web/appsettings.json" />
-        <option value="$PROJECT_DIR$/Bonus.Web/Services/ICardService.cs" />
-        <option value="$PROJECT_DIR$/Bonus.Data/Repositories/ICardRepository.cs" />
-        <option value="$PROJECT_DIR$/Bonus.Web/Controllers/IBaseController.cs" />
         <option value="$PROJECT_DIR$/Bonus.Web/Controllers/ICardController.cs" />
         <option value="$PROJECT_DIR$/Bonus.Web/DI/DIModule.cs" />
-        <option value="$PROJECT_DIR$/Bonus.Data/Repositories/RepositoryBase.cs" />
         <option value="$PROJECT_DIR$/Bonus.Data/Repositories/IRepositoryBase.cs" />
-        <option value="$PROJECT_DIR$/Bonus.Web/Services/BaseService.cs" />
         <option value="$PROJECT_DIR$/Bonus.Web/Services/IBaseService.cs" />
         <option value="$PROJECT_DIR$/Bonus.Data/Repositories/IUserRepository.cs" />
         <option value="$PROJECT_DIR$/Bonus.Data/Repositories/Interfaces/IUserRepository.cs" />
@@ -114,11 +74,8 @@
         <option value="$PROJECT_DIR$/Bonus.Web/Services/UserService.cs" />
         <option value="$PROJECT_DIR$/Bonus.Web/Controllers/Interfaces/IUserController.cs" />
         <option value="$PROJECT_DIR$/Bonus.Web/Controllers/UserController.cs" />
-        <option value="$PROJECT_DIR$/Bonus.Web/Startup.cs" />
         <option value="$PROJECT_DIR$/Bonus.Data/Models/User.cs" />
-        <option value="$PROJECT_DIR$/Bonus.Web/Controllers/CardController.cs" />
         <option value="$PROJECT_DIR$/Bonus.Web/Services/CardService.cs" />
-        <option value="$PROJECT_DIR$/Bonus.Data/Repositories/CardRepository.cs" />
         <option value="$PROJECT_DIR$/Bonus.Web/Services/Interfaces/ITransactionService.cs" />
         <option value="$PROJECT_DIR$/Bonus.Web/Controllers/Interfaces/ITransationController.cs" />
         <option value="$PROJECT_DIR$/Bonus.Data/Models/Store.cs" />
@@ -128,12 +85,35 @@
         <option value="$PROJECT_DIR$/Bonus.Web/Services/Interfaces/ICustomerService.cs" />
         <option value="$PROJECT_DIR$/Bonus.Web/Controllers/WeatherForecastController.cs" />
         <option value="$PROJECT_DIR$/Bonus.Web/Services/TransactionService.cs" />
-        <option value="$PROJECT_DIR$/Bonus.Data/Repositories/Interfaces/ICustomerRepository.cs" />
         <option value="$PROJECT_DIR$/Bonus.Data/Models/Transaction.cs" />
         <option value="$PROJECT_DIR$/Bonus.Data/ApplicationDbContext.cs" />
-        <option value="$PROJECT_DIR$/Bonus.Web/Controllers/ControllerBase.cs" />
         <option value="$PROJECT_DIR$/Bonus.Web/Controllers/TransactionController.cs" />
         <option value="$PROJECT_DIR$/Bonus.Data/Models/Card.cs" />
+        <option value="$PROJECT_DIR$/Bonus.Data/Repositories/Interfaces/Store.cs" />
+        <option value="$PROJECT_DIR$/Bonus.Data/Repositories/Interfaces/StoreRepository.cs" />
+        <option value="$PROJECT_DIR$/Bonus.Web/Controllers/CustomerController.cs" />
+        <option value="$PROJECT_DIR$/Bonus.Data/Repositories/Interfaces/IStoreRepository.cs" />
+        <option value="$PROJECT_DIR$/Bonus.Data/Repositories/Interfaces/ICustomerRepository.cs" />
+        <option value="$PROJECT_DIR$/Bonus.Web/Controllers/Interfaces/IStoreService.cs" />
+        <option value="$PROJECT_DIR$/Bonus.Web/Controllers/Interfaces/IStoreController.cs" />
+        <option value="$PROJECT_DIR$/Bonus.Web/Services/Interfaces/IStoreService.cs" />
+        <option value="$PROJECT_DIR$/Bonus.Web/Services/StoreService.cs" />
+        <option value="$PROJECT_DIR$/Bonus.Web/Services/BaseService.cs" />
+        <option value="$PROJECT_DIR$/Bonus.Web/Controllers/ControllerBase.cs" />
+        <option value="$PROJECT_DIR$/Bonus.Data/Repositories/RepositoryBase.cs" />
+        <option value="$PROJECT_DIR$/Bonus.Data/Repositories/StoreRepository.cs" />
+        <option value="$PROJECT_DIR$/Bonus.Data/Repositories/CustomerRepository.cs" />
+        <option value="$PROJECT_DIR$/Bonus.Data/Repositories/CardRepository.cs" />
+        <option value="$PROJECT_DIR$/Bonus.Core/Class1.cs" />
+        <option value="$PROJECT_DIR$/Bonus.Core/Services/TransactionService.cs" />
+        <option value="$PROJECT_DIR$/Bonus.Web/Controllers/StoreController.cs" />
+        <option value="$PROJECT_DIR$/Bonus.Core/Services/StoreService.cs" />
+        <option value="$PROJECT_DIR$/Bonus.Core/Services/CustomerService.cs" />
+        <option value="$PROJECT_DIR$/Bonus.Core/Services/CardService.cs" />
+        <option value="$PROJECT_DIR$/Bonus.Core/Services/BaseService.cs" />
+        <option value="$PROJECT_DIR$/Bonus.Web/Program.cs" />
+        <option value="$PROJECT_DIR$/Bonus.Web/Startup.cs" />
+        <option value="$PROJECT_DIR$/Bonus.Web/Controllers/CardController.cs" />
       </list>
     </option>
   </component>
@@ -147,10 +127,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
-    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30010834" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.16197184" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.13867822" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="XThreadsFramesViewSplitterKey" value="0.74595845" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="RiderNuGetOptionsPageId" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -228,6 +209,7 @@
       <workItem from="1614701514208" duration="11476000" />
       <workItem from="1614713416089" duration="3637000" />
       <workItem from="1614753477971" duration="25875000" />
+      <workItem from="1614840313306" duration="12437000" />
     </task>
     <servers />
   </component>
@@ -283,94 +265,102 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="917" height="569" key="DebuggerActiveHint" timestamp="1614768698616">
+    <state x="715" y="224" key="#xdebugger.evaluate" timestamp="1614842956108">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="917" height="569" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1614768698616" />
-    <state width="1877" height="374" key="GridCell.Tab.0.bottom" timestamp="1614788667132">
+    <state x="715" y="224" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1614842956108" />
+    <state width="917" height="569" key="DebuggerActiveHint" timestamp="1614865142694">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="374" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1614788667132" />
-    <state width="1877" height="374" key="GridCell.Tab.0.center" timestamp="1614788667132">
+    <state width="917" height="569" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1614865142694" />
+    <state width="1877" height="200" key="GridCell.Tab.0.bottom" timestamp="1614868419791">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="374" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1614788667132" />
-    <state width="1877" height="374" key="GridCell.Tab.0.left" timestamp="1614788667132">
+    <state width="1877" height="200" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1614868419791" />
+    <state width="1877" height="200" key="GridCell.Tab.0.center" timestamp="1614868419791">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="374" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1614788667132" />
-    <state width="1877" height="374" key="GridCell.Tab.0.right" timestamp="1614788667132">
+    <state width="1877" height="200" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1614868419791" />
+    <state width="1877" height="200" key="GridCell.Tab.0.left" timestamp="1614868419791">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="374" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1614788667132" />
-    <state width="1877" height="374" key="GridCell.Tab.1.bottom" timestamp="1614788667133">
+    <state width="1877" height="200" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1614868419791" />
+    <state width="1877" height="200" key="GridCell.Tab.0.right" timestamp="1614868419791">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="374" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1614788667133" />
-    <state width="1877" height="374" key="GridCell.Tab.1.center" timestamp="1614788667133">
+    <state width="1877" height="200" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1614868419791" />
+    <state width="1877" height="200" key="GridCell.Tab.1.bottom" timestamp="1614868423410">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="374" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1614788667133" />
-    <state width="1877" height="374" key="GridCell.Tab.1.left" timestamp="1614788667133">
+    <state width="1877" height="200" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1614868423410" />
+    <state width="1877" height="200" key="GridCell.Tab.1.center" timestamp="1614868423409">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="374" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1614788667133" />
-    <state width="1877" height="374" key="GridCell.Tab.1.right" timestamp="1614788667133">
+    <state width="1877" height="200" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1614868423409" />
+    <state width="1877" height="200" key="GridCell.Tab.1.left" timestamp="1614868423409">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="374" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1614788667133" />
-    <state width="1877" height="374" key="GridCell.Tab.2.bottom" timestamp="1614788667133">
+    <state width="1877" height="200" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1614868423409" />
+    <state width="1877" height="200" key="GridCell.Tab.1.right" timestamp="1614868423409">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="374" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1614788667133" />
-    <state width="1877" height="374" key="GridCell.Tab.2.center" timestamp="1614788667133">
+    <state width="1877" height="200" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1614868423409" />
+    <state width="1877" height="200" key="GridCell.Tab.2.bottom" timestamp="1614868391214">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="374" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1614788667133" />
-    <state width="1877" height="374" key="GridCell.Tab.2.left" timestamp="1614788667133">
+    <state width="1877" height="200" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1614868391214" />
+    <state width="1877" height="200" key="GridCell.Tab.2.center" timestamp="1614868391214">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="374" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1614788667133" />
-    <state width="1877" height="374" key="GridCell.Tab.2.right" timestamp="1614788667133">
+    <state width="1877" height="200" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1614868391214" />
+    <state width="1877" height="200" key="GridCell.Tab.2.left" timestamp="1614868391214">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="374" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1614788667133" />
-    <state width="1877" height="374" key="GridCell.Tab.3.bottom" timestamp="1614788667133">
+    <state width="1877" height="200" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1614868391214" />
+    <state width="1877" height="200" key="GridCell.Tab.2.right" timestamp="1614868391214">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="374" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1614788667133" />
-    <state width="1877" height="374" key="GridCell.Tab.3.center" timestamp="1614788667133">
+    <state width="1877" height="200" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1614868391214" />
+    <state width="1877" height="200" key="GridCell.Tab.3.bottom" timestamp="1614868391214">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="374" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1614788667133" />
-    <state width="1877" height="374" key="GridCell.Tab.3.left" timestamp="1614788667133">
+    <state width="1877" height="200" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1614868391214" />
+    <state width="1877" height="200" key="GridCell.Tab.3.center" timestamp="1614868391214">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="374" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1614788667133" />
-    <state width="1877" height="374" key="GridCell.Tab.3.right" timestamp="1614788667133">
+    <state width="1877" height="200" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1614868391214" />
+    <state width="1877" height="200" key="GridCell.Tab.3.left" timestamp="1614868391214">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="374" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1614788667133" />
-    <state width="1877" height="374" key="GridCell.Tab.4.bottom" timestamp="1614788667133">
+    <state width="1877" height="200" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1614868391214" />
+    <state width="1877" height="200" key="GridCell.Tab.3.right" timestamp="1614868391214">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="374" key="GridCell.Tab.4.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1614788667133" />
-    <state width="1877" height="374" key="GridCell.Tab.4.center" timestamp="1614788667133">
+    <state width="1877" height="200" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1614868391214" />
+    <state width="1877" height="200" key="GridCell.Tab.4.bottom" timestamp="1614868391214">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="374" key="GridCell.Tab.4.center/0.0.1920.1040@0.0.1920.1040" timestamp="1614788667133" />
-    <state width="1877" height="374" key="GridCell.Tab.4.left" timestamp="1614788667133">
+    <state width="1877" height="200" key="GridCell.Tab.4.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1614868391214" />
+    <state width="1877" height="200" key="GridCell.Tab.4.center" timestamp="1614868391214">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="374" key="GridCell.Tab.4.left/0.0.1920.1040@0.0.1920.1040" timestamp="1614788667133" />
-    <state width="1877" height="374" key="GridCell.Tab.4.right" timestamp="1614788667133">
+    <state width="1877" height="200" key="GridCell.Tab.4.center/0.0.1920.1040@0.0.1920.1040" timestamp="1614868391214" />
+    <state width="1877" height="200" key="GridCell.Tab.4.left" timestamp="1614868391214">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="374" key="GridCell.Tab.4.right/0.0.1920.1040@0.0.1920.1040" timestamp="1614788667133" />
-    <state x="552" y="253" key="Rider.ProjectTemplateDialog.Size" timestamp="1614713237737">
+    <state width="1877" height="200" key="GridCell.Tab.4.left/0.0.1920.1040@0.0.1920.1040" timestamp="1614868391214" />
+    <state width="1877" height="200" key="GridCell.Tab.4.right" timestamp="1614868391214">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Rider.ProjectTemplateDialog.Size/0.0.1920.1040@0.0.1920.1040" timestamp="1614713237737" />
+    <state width="1877" height="200" key="GridCell.Tab.4.right/0.0.1920.1040@0.0.1920.1040" timestamp="1614868391214" />
+    <state x="552" y="253" key="Rider.ProjectTemplateDialog.Size" timestamp="1614861945266">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Rider.ProjectTemplateDialog.Size/0.0.1920.1040@0.0.1920.1040" timestamp="1614861945266" />
+    <state x="670" y="198" key="RiderGenerateDialog" timestamp="1614861779391">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="670" y="198" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1614861779391" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1614713298262">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

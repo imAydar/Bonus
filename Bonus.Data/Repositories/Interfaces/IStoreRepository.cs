@@ -2,7 +2,7 @@
 
 namespace Bonus.Data.Repositories
 {
-    public interface ICustomerRepository: IRepositoryBase<Customer>
+    public interface IStoreRepository: IRepositoryBase<Store>
     {
     }
 }

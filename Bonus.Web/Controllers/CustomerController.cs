@@ -1,5 +1,5 @@
-﻿using Bonus.Data.Models;
-using Bonus.Web.Services;
+﻿using Bonus.Core.Services.Interfaces;
+using Bonus.Data.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Bonus.Web.Controllers
@@ -8,12 +8,12 @@ namespace Bonus.Web.Controllers
     /// simple crud controller
     /// </summary>
     [ApiController]
-    [Route("user")]
+    [Route("customer")]
     public class CustomerController:  Bonus.Web.Controllers.ControllerBase<Customer>, ICustomerController
     {
-        private readonly ICustomerService service;
+        private readonly ICustomer service;
 
-        public CustomerController(ICustomerService service) : base(service)
+        public CustomerController(ICustomer service) : base(service)
         {
             this.service = service;
         }

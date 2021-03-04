@@ -22,6 +22,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\Bonus.Core\Bonus.Core.csproj" />
       <ProjectReference Include="..\Bonus.Data\Bonus.Data.csproj" />
     </ItemGroup>
 

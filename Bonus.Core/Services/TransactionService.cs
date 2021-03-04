@@ -1,7 +1,8 @@
 ﻿using System.Threading.Tasks;
+using Bonus.Core.Services.Interfaces;
 using Bonus.Data.Models;
 
-namespace Bonus.Web.Services
+namespace Bonus.Core.Services
 {
     public class TransactionService:ITransactionService
     {

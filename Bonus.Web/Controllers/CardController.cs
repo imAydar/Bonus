@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Bonus.Core.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-using Bonus.Web.Services;
 using Bonus.Data.Models;
 
 namespace Bonus.Web.Controllers
@@ -15,20 +15,18 @@ namespace Bonus.Web.Controllers
     [Route("card")]
     public class CardController :  Bonus.Web.Controllers.ControllerBase<Card>, ICardController
     {
-        private readonly ICardService cardService;
+        private readonly ICard _card;
 
-        public CardController(ICardService cardService) : base(cardService)
-        {
-            this.cardService = cardService;
-        }
-        
+        public CardController(ICard card) : base(card) =>
+            this._card = card;
+
 
         [HttpGet("{code}")]
         public async Task<IActionResult> Get(string code)
         {
             try
             {
-                var result = await cardService.GetByCodeAsync(code);
+                var result = await _card.GetByCodeAsync(code);
                 return Ok(result);
             }
             catch (Exception e)
@@ -36,47 +34,5 @@ namespace Bonus.Web.Controllers
                 return BadRequest(e);
             }
         }
-/*
-        [HttpPost]
-        public async Task<IActionResult> Create(Card card)
-        {
-            try
-            {
-                var result = await cardService.CreateAsync(card);
-                return Ok(result);
-            }
-            catch (Exception e)
-            {
-                return BadRequest(e);
-            }
-        }
-
-        [HttpPut]
-        public async Task<IActionResult> Update(Card card)
-        {
-            try
-            {
-                var result = await cardService.UpdateAsync(card);
-                return Ok(result);
-            }
-            catch (Exception e)
-            {
-                return BadRequest(e);
-            }
-        }
-
-        [HttpDelete]
-        public async Task<IActionResult> Delete(Card card)
-        {
-            try
-            {
-                var result = await cardService.DeleteAsync(card);
-                return Ok(result);
-            }
-            catch (Exception e)
-            {
-                return BadRequest(e);
-            }
-        }*/
     }
 }

@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
+using Bonus.Core.Services;
 using Bonus.Data.Models;
-using Bonus.Web.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Bonus.Web.Controllers

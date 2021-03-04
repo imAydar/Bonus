@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bonus.Web", "Bonus.Web\Bonu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bonus.Data", "Bonus.Data\Bonus.Data.csproj", "{A38D8FCA-A2D4-4D17-B582-02AFED68934D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bonus.Core", "Bonus.Core\Bonus.Core.csproj", "{DA4AEE98-636A-4DE5-8E47-0FBB0048B112}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{A38D8FCA-A2D4-4D17-B582-02AFED68934D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A38D8FCA-A2D4-4D17-B582-02AFED68934D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A38D8FCA-A2D4-4D17-B582-02AFED68934D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA4AEE98-636A-4DE5-8E47-0FBB0048B112}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA4AEE98-636A-4DE5-8E47-0FBB0048B112}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA4AEE98-636A-4DE5-8E47-0FBB0048B112}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA4AEE98-636A-4DE5-8E47-0FBB0048B112}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

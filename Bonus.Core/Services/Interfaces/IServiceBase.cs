@@ -1,10 +1,9 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Bonus.Data.Models;
 
-namespace Bonus.Web.Services
+namespace Bonus.Core.Services.Interfaces
 {
-    public interface IBaseService<TEntity> 
+    public interface IServiceBase<TEntity> 
         where TEntity : class
     {
         Task<TEntity> CreateAsync(TEntity entity);

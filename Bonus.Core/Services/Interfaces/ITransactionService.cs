@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Bonus.Data.Models;
 
-namespace Bonus.Web.Services
+namespace Bonus.Core.Services.Interfaces
 {
     /// <summary>
     /// 

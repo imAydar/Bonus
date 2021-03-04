@@ -2,10 +2,11 @@
 
 namespace Bonus.Data.Repositories
 {
-    public class CustomerRepository: RepositoryBase<Customer>, ICustomerRepository
+    public class StoreRepository:RepositoryBase<Store>,  IStoreRepository
     {
         private readonly ApplicationDbContext context;
-        public CustomerRepository(ApplicationDbContext context) : base(context)=>
+
+        public StoreRepository(ApplicationDbContext context) : base(context) =>
             this.context = context;
     }
 }

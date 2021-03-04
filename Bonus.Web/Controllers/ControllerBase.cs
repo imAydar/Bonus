@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Bonus.Core.Services.Interfaces;
 using Bonus.Data.Models;
-using Bonus.Web.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Bonus.Web.Controllers
@@ -10,20 +10,16 @@ namespace Bonus.Web.Controllers
     public abstract class ControllerBase<TEntity> : ControllerBase, IControllerBase<TEntity>
         where TEntity : class
     {
-        private readonly IBaseService<TEntity> serviceBase;
+        private readonly IServiceBase<TEntity> _serviceBase;
+        public ControllerBase(IServiceBase<TEntity> serviceBase) =>
+            this._serviceBase = serviceBase;
 
-        public ControllerBase(IBaseService<TEntity> serviceBase)
-        {
-            this.serviceBase = serviceBase;
-        }
-        
-        // GET
         [HttpGet]
         public async Task<IActionResult>  Get()
         {
             try
             {
-                var result = await serviceBase.GetAllAsync();
+                var result = await _serviceBase.GetAllAsync();
                 return Ok(result);
             }
             catch (Exception ex)
@@ -37,7 +33,7 @@ namespace Bonus.Web.Controllers
         {
             try
             {
-                var result = await serviceBase.CreateAsync(entity);
+                var result = await _serviceBase.CreateAsync(entity);
                 return Ok(result);
             }
             catch (Exception e)
@@ -51,7 +47,7 @@ namespace Bonus.Web.Controllers
         {
             try
             {
-                var result = await serviceBase.UpdateAsync(entity);
+                var result = await _serviceBase.UpdateAsync(entity);
                 return Ok(result);
             }
             catch (Exception e)
@@ -65,7 +61,7 @@ namespace Bonus.Web.Controllers
         {
             try
             {
-                var result = await serviceBase.DeleteAsync(entity);
+                var result = await _serviceBase.DeleteAsync(entity);
                 return Ok(result);
             }
             catch (Exception e)
