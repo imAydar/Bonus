@@ -10,16 +10,16 @@ namespace Bonus.Web.Controllers
     public abstract class ControllerBase<TEntity> : ControllerBase, IControllerBase<TEntity>
         where TEntity : class
     {
-        private readonly IServiceBase<TEntity> _serviceBase;
-        public ControllerBase(IServiceBase<TEntity> serviceBase) =>
-            this._serviceBase = serviceBase;
+        private readonly IBaseService<TEntity> serviceBase;
+        public ControllerBase(IBaseService<TEntity> serviceBase) =>
+            this.serviceBase = serviceBase;
 
         [HttpGet]
         public async Task<IActionResult>  Get()
         {
             try
             {
-                var result = await _serviceBase.GetAllAsync();
+                var result = await serviceBase.GetAllAsync();
                 return Ok(result);
             }
             catch (Exception ex)
@@ -33,7 +33,7 @@ namespace Bonus.Web.Controllers
         {
             try
             {
-                var result = await _serviceBase.CreateAsync(entity);
+                var result = await serviceBase.CreateAsync(entity);
                 return Ok(result);
             }
             catch (Exception e)
@@ -47,7 +47,7 @@ namespace Bonus.Web.Controllers
         {
             try
             {
-                var result = await _serviceBase.UpdateAsync(entity);
+                var result = await serviceBase.UpdateAsync(entity);
                 return Ok(result);
             }
             catch (Exception e)
@@ -61,7 +61,7 @@ namespace Bonus.Web.Controllers
         {
             try
             {
-                var result = await _serviceBase.DeleteAsync(entity);
+                var result = await serviceBase.DeleteAsync(entity);
                 return Ok(result);
             }
             catch (Exception e)

@@ -20,9 +20,6 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Microsoft.EntityFrameworkCore;
-using Card = Bonus.Core.Services.Card;
-using Customer = Bonus.Core.Services.Customer;
-using Store = Bonus.Core.Services.Store;
 
 namespace Bonus.Web
 {
@@ -47,11 +44,11 @@ namespace Bonus.Web
                     b => b.MigrationsAssembly("Bonus.Web")));
             
             services.AddScoped<ICardRepository, CardRepository>();
-            services.AddScoped<ICard, Card>();
+            services.AddScoped<ICardService, CardService>();
             services.AddScoped<ICustomerRepository, CustomerRepository>();
-            services.AddScoped<ICustomer, Customer>();
+            services.AddScoped<ICustomerService, CustomerService>();
             services.AddScoped<IStoreRepository, StoreRepository>();
-            services.AddScoped<IStore, Store>();
+            services.AddScoped<IStoreService, StoreService>();
         }
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {

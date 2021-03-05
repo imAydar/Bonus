@@ -2,7 +2,7 @@
 
 namespace Bonus.Core.Services.Interfaces
 {
-    public interface ICustomer:IServiceBase<Data.Models.Customer>
+    public interface ICustomerService:IBaseService<Customer>
     {
         
     }

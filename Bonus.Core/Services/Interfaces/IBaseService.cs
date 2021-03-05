@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace Bonus.Core.Services.Interfaces
 {
-    public interface IServiceBase<TEntity> 
+    public interface IBaseService<TEntity> 
         where TEntity : class
     {
         Task<TEntity> CreateAsync(TEntity entity);

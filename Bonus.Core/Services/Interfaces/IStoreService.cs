@@ -2,7 +2,7 @@
 
 namespace Bonus.Core.Services.Interfaces
 {
-    public interface IStore:IServiceBase<Data.Models.Store>
+    public interface IStoreService:IBaseService<Store>
     {
         
     }

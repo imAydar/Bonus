@@ -11,9 +11,9 @@ namespace Bonus.Web.Controllers
     [Route("customer")]
     public class CustomerController:  Bonus.Web.Controllers.ControllerBase<Customer>, ICustomerController
     {
-        private readonly ICustomer service;
+        private readonly ICustomerService service;
 
-        public CustomerController(ICustomer service) : base(service)
+        public CustomerController(ICustomerService service) : base(service)
         {
             this.service = service;
         }

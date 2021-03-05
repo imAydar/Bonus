@@ -4,11 +4,11 @@ using Bonus.Data.Repositories;
 
 namespace Bonus.Core.Services
 {
-    public class Store:ServiceBase<Data.Models.Store>, IStore
+    public class StoreService:BaseService<Store>, IStoreService
     {
         private readonly IStoreRepository repository;
 
-        public Store(IStoreRepository repository):base(repository) =>
+        public StoreService(IStoreRepository repository):base(repository) =>
             this.repository = repository;
     }
 }

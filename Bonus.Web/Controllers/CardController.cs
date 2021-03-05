@@ -15,10 +15,10 @@ namespace Bonus.Web.Controllers
     [Route("card")]
     public class CardController :  Bonus.Web.Controllers.ControllerBase<Card>, ICardController
     {
-        private readonly ICard _card;
+        private readonly ICardService cardService;
 
-        public CardController(ICard card) : base(card) =>
-            this._card = card;
+        public CardController(ICardService cardService) : base(cardService) =>
+            this.cardService = cardService;
 
 
         [HttpGet("{code}")]
@@ -26,7 +26,7 @@ namespace Bonus.Web.Controllers
         {
             try
             {
-                var result = await _card.GetByCodeAsync(code);
+                var result = await cardService.GetByCodeAsync(code);
                 return Ok(result);
             }
             catch (Exception e)

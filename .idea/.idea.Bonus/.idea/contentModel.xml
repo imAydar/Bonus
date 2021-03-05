@@ -15,17 +15,17 @@
           </e>
         </e>
         <e p="Services" t="Include">
-          <e p="Card.cs" t="Include" />
-          <e p="Customer.cs" t="Include" />
+          <e p="BaseService.cs" t="Include" />
+          <e p="CardService.cs" t="Include" />
+          <e p="CustomerService.cs" t="Include" />
           <e p="Interfaces" t="Include">
-            <e p="ICard.cs" t="Include" />
-            <e p="ICustomer.cs" t="Include" />
-            <e p="IServiceBase.cs" t="Include" />
-            <e p="IStore.cs" t="Include" />
+            <e p="IBaseService.cs" t="Include" />
+            <e p="ICardService.cs" t="Include" />
+            <e p="ICustomerService.cs" t="Include" />
+            <e p="IStoreService.cs" t="Include" />
             <e p="ITransactionService.cs" t="Include" />
           </e>
-          <e p="ServiceBase.cs" t="Include" />
-          <e p="Store.cs" t="Include" />
+          <e p="StoreService.cs" t="Include" />
           <e p="TransactionService.cs" t="Include" />
         </e>
       </e>

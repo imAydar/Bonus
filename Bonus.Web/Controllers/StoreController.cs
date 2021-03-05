@@ -9,9 +9,9 @@ namespace Bonus.Web.Controllers
     [Route("store")]
     public class StoreController:Bonus.Web.Controllers.ControllerBase<Store>, IStoreController
     {
-        private readonly IStore service;
+        private readonly IStoreService service;
 
-        public StoreController(IStore service) : base(service) =>
+        public StoreController(IStoreService service) : base(service) =>
             this.service = service;
     }
 }

@@ -4,11 +4,11 @@ using Bonus.Data.Repositories;
 
 namespace Bonus.Core.Services
 {
-    public class Customer:ServiceBase<Data.Models.Customer>, ICustomer
+    public class CustomerService:BaseService<Customer>, ICustomerService
     {
         private readonly ICustomerRepository repository;
 
-        public Customer(ICustomerRepository repository):base(repository) =>
+        public CustomerService(ICustomerRepository repository):base(repository) =>
             this.repository = repository;
     }
 }

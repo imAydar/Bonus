@@ -5,12 +5,12 @@ using Bonus.Data.Repositories;
 
 namespace Bonus.Core.Services
 {
-    public abstract class ServiceBase<TEntity> : IServiceBase<TEntity>
+    public abstract class BaseService<TEntity> : IBaseService<TEntity>
         where TEntity : class
     {
         private readonly IRepositoryBase<TEntity> repositoryBase;
         
-        public ServiceBase(IRepositoryBase<TEntity> repositoryBase) =>
+        public BaseService(IRepositoryBase<TEntity> repositoryBase) =>
             this.repositoryBase = repositoryBase;
         
         public async Task<TEntity> CreateAsync(TEntity entity) =>
