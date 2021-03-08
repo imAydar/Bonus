@@ -8,5 +8,7 @@ namespace Bonus.Data.Repositories
     public interface ICardRepository: IRepositoryBase<Card>
     {
         Task<Card> GetByCode(string code);
+        decimal GetBonus(int cardId);
+        decimal GetBonusRate(int cardId);
     }
 }

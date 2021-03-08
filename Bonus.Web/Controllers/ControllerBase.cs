@@ -15,7 +15,7 @@ namespace Bonus.Web.Controllers
             this.serviceBase = serviceBase;
 
         [HttpGet]
-        public async Task<IActionResult>  Get()
+        public virtual async Task<IActionResult>  Get()
         {
             try
             {

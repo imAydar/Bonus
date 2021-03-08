@@ -27,6 +27,7 @@ namespace Bonus.Web.Controllers
         public ActionResult nGet()
         {
             var rng = new Random();
+            _logger.LogCritical("got weather");
             return  Ok(Enumerable.Range(1, 5).Select(index => new WeatherForecast
                 {
                     Date = DateTime.Now.AddDays(index),
@@ -34,6 +35,7 @@ namespace Bonus.Web.Controllers
                     Summary = Summaries[rng.Next(Summaries.Length)]
                 })
                 .ToArray());
+            
         }
     }
 }

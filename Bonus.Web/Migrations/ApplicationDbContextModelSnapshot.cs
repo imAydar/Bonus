@@ -106,27 +106,21 @@ namespace Bonus.Web.Migrations
                     b.ToTable("Terminals");
                 });
 
-            modelBuilder.Entity("Bonus.Data.Models.Transaction", b =>
+            modelBuilder.Entity("Bonus.Data.Models.TransactionDTO", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer")
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
-                    b.Property<decimal?>("Bonus")
+                    b.Property<decimal>("Bonus")
+                        .HasColumnType("numeric");
+
+                    b.Property<decimal>("BonusRateSoFar")
                         .HasColumnType("numeric");
 
                     b.Property<int>("CardId")
                         .HasColumnType("integer");
-
-                    b.Property<string>("ChequeNumber")
-                        .HasColumnType("text");
-
-                    b.Property<DateTime>("ChequeTime")
-                        .HasColumnType("timestamp without time zone");
-
-                    b.Property<decimal>("Summ")
-                        .HasColumnType("numeric");
 
                     b.Property<int>("TerminalId")
                         .HasColumnType("integer");
@@ -160,7 +154,7 @@ namespace Bonus.Web.Migrations
                     b.Navigation("Store");
                 });
 
-            modelBuilder.Entity("Bonus.Data.Models.Transaction", b =>
+            modelBuilder.Entity("Bonus.Data.Models.TransactionDTO", b =>
                 {
                     b.HasOne("Bonus.Data.Models.Card", "Card")
                         .WithMany()

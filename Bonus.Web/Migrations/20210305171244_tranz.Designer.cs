@@ -10,8 +10,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Bonus.Web.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210303163246_first")]
-    partial class first
+    [Migration("20210305171244_tranz")]
+    partial class tranz
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -115,20 +115,14 @@ namespace Bonus.Web.Migrations
                         .HasColumnType("integer")
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
-                    b.Property<decimal?>("Bonus")
+                    b.Property<decimal>("Bonus")
+                        .HasColumnType("numeric");
+
+                    b.Property<decimal>("BonusRateSoFar")
                         .HasColumnType("numeric");
 
                     b.Property<int>("CardId")
                         .HasColumnType("integer");
-
-                    b.Property<string>("ChequeNumber")
-                        .HasColumnType("text");
-
-                    b.Property<DateTime>("ChequeTime")
-                        .HasColumnType("timestamp without time zone");
-
-                    b.Property<decimal>("Summ")
-                        .HasColumnType("numeric");
 
                     b.Property<int>("TerminalId")
                         .HasColumnType("integer");

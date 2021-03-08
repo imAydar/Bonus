@@ -4,6 +4,8 @@ using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 using Autofac;
+using AutoMapper;
+using Bonus.Core.Mappings;
 using Bonus.Core.Services;
 using Bonus.Core.Services.Interfaces;
 using Bonus.Data;
@@ -37,11 +39,32 @@ namespace Bonus.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                    builder => builder.AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader());
+                    
+            });
+            
+            
+            services.AddControllers().AddNewtonsoftJson(options =>
+                options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);;
             services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo {Title = "Bonus.Web", Version = "v1"}); });
             services.AddEntityFrameworkNpgsql().AddDbContext<Bonus.Data.ApplicationDbContext>(opt =>
                 opt.UseNpgsql(Configuration.GetConnectionString("MyWebApiConection"),
                     b => b.MigrationsAssembly("Bonus.Web")));
+            var mapperConfig = new MapperConfiguration(mc =>
+            {
+                mc.AddProfile(new MappingProfile());
+            });
+            IMapper mapper = mapperConfig.CreateMapper();
+            services.AddSingleton(mapper);
+            
+            services.AddScoped<ITransactionService, TransactionService>();
+            services.AddScoped<ITransactionRepository, TransactionRepository>();
+            
             
             services.AddScoped<ICardRepository, CardRepository>();
             services.AddScoped<ICardService, CardService>();

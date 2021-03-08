@@ -7,6 +7,9 @@
       <e p="Bonus.Core" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="Bonus.Core.csproj" t="IncludeRecursive" />
+        <e p="Mappings" t="Include">
+          <e p="MappingProfile.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="net5.0" t="Include">
@@ -33,6 +36,9 @@
         <e p="ApplicationDbContext.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Bonus.Data.csproj" t="IncludeRecursive" />
+        <e p="DTOs" t="Include">
+          <e p="TransactionDTO.cs" t="Include" />
+        </e>
         <e p="Models" t="Include">
           <e p="Card.cs" t="Include" />
           <e p="Customer.cs" t="Include" />
@@ -55,9 +61,11 @@
             <e p="ICustomerRepository.cs" t="Include" />
             <e p="IRepositoryBase.cs" t="Include" />
             <e p="IStoreRepository.cs" t="Include" />
+            <e p="ITransactionRepository.cs" t="Include" />
           </e>
           <e p="RepositoryBase.cs" t="Include" />
           <e p="StoreRepository.cs" t="Include" />
+          <e p="TransactionRepository.cs" t="Include" />
         </e>
       </e>
       <e p="Bonus.sln" t="IncludeFlat" />
@@ -87,6 +95,8 @@
         <e p="Migrations" t="Include">
           <e p="20210303163246_first.cs" t="Include" />
           <e p="20210303163246_first.Designer.cs" t="Include" />
+          <e p="20210305171244_tranz.cs" t="Include" />
+          <e p="20210305171244_tranz.Designer.cs" t="Include" />
           <e p="ApplicationDbContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">

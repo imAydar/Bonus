@@ -6,5 +6,6 @@ namespace Bonus.Core.Services.Interfaces
     public interface ICardService : IBaseService<Card>
     {
         public Task<Card> GetByCodeAsync(string code);
+        public decimal GetCurrentBonusAmount(int cardId);
     }
 }

@@ -6,6 +6,7 @@ namespace Bonus.Web.Controllers
 {
     public interface ICardController : IControllerBase<Card>
     {
-        Task<IActionResult> Get(string code);
+        Task<IActionResult> GetByCode(string code);
+        Task<IActionResult> GetBonusSumm(int cardId);
     }
 }

@@ -1,5 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Bonus.Core.Services;
+using Bonus.Core.Services.Interfaces;
+using Bonus.Data.DTOs;
 using Bonus.Data.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,17 +11,17 @@ namespace Bonus.Web.Controllers
     [Route("transaction")]
     public class TransactionController : Microsoft.AspNetCore.Mvc.ControllerBase, ITransationController
     {
-        private readonly TransactionService service;
+        private readonly ITransactionService service;
 
-        public TransactionController(TransactionService service)
+        public TransactionController(ITransactionService service)
         {
             this.service = service;
         }
         
         [HttpPost]
-        public async Task<IActionResult> Commit(Transaction transaction)
+        public async Task<IActionResult> Commit(TransactionDTO transactionDto)
         {
-            return Ok(await service.Commit(transaction));
+            return Ok(await service.Commit(transactionDto));
         }
     }
 }
